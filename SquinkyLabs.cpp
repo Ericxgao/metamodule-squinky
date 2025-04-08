@@ -6,6 +6,8 @@ const NVGcolor SqHelper::COLOR_WHITE = nvgRGB(0xff, 0xff, 0xff);
 const NVGcolor SqHelper::COLOR_BLACK = nvgRGB(0,0,0);
 const NVGcolor SqHelper::COLOR_SQUINKY = nvgRGB(0x30, 0x7d, 0xee);
 
+int soloStateCount = 0;
+
 #if defined(METAMODULE_BUILTIN)
 extern Plugin *pluginInstance;
 #else
@@ -23,19 +25,25 @@ void init(rack::Plugin *p) {
   p->addModel(modelEV3Module);
   p->addModel(modelF2Module);
   p->addModel(modelCompressorModule);
-  p->addModel(modelColoredNoiseModule);
   p->addModel(modelVocalFilterModule);
   p->addModel(modelGrayModule);
   p->addModel(modelSuperModule);
+  //p->addModel(modelColoredNoiseModule);
   p->addModel(modelShaperModule);
   p->addModel(modelVocalModule);  
   p->addModel(modelCHBModule);
   p->addModel(modelLFNModule); 
   p->addModel(modelLFNBModule); 
-  // p->addModel(modelCompressor2Module);
   p->addModel(modelBasicModule);
   p->addModel(modelBootyModule);
   p->addModel(modelTremoloModule);  
   p->addModel(modelSlew4Module);
   p->addModel(modelMix8Module);
+  p->addModel(modelMixMModule);
+  p->addModel(modelFunVModule);
+  p->addModel(modelDrumTriggerModule);
+  p->addModel(modelMixStereoModule);
+  p->addModel(modelWVCOModule);
+  p->addModel(modelSubModule);
+  p->addModel(modelSinesModule);
 }

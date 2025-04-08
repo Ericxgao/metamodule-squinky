@@ -40,7 +40,16 @@ target_sources(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/src/CompressorModule2.cpp
     # ${SOURCE_DIR}/src/DGModule.cpp
     # ${SOURCE_DIR}/src/DividerXModule.cpp
-    # ${SOURCE_DIR}/src/DrumTriggerModule.cpp
+    ${SOURCE_DIR}/src/SinesModule.cpp
+    ${SOURCE_DIR}/dsp/utils/SimpleQuantizer.cpp
+    ${SOURCE_DIR}/src/WVCOModule.cpp
+    ${SOURCE_DIR}/src/SubModule.cpp
+    ${SOURCE_DIR}/src/DrumTriggerModule.cpp
+    ${SOURCE_DIR}/src/FunVModule.cpp
+    ${SOURCE_DIR}/src/MixStereoModule.cpp
+    ${SOURCE_DIR}/src/Mix4Module.cpp
+    ${SOURCE_DIR}/src/Mix8Module.cpp
+    ${SOURCE_DIR}/src/MixMModule.cpp
     ${SOURCE_DIR}/src/EV3Module.cpp
     ${SOURCE_DIR}/src/F2Module.cpp
     ${SOURCE_DIR}/src/GrayModule.cpp
@@ -80,6 +89,7 @@ target_sources(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130/tools/kiss_fftr.c
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130/kiss_fft.c
     ${SOURCE_DIR}/dsp/filters/FormantTables2.cpp
+    ${SOURCE_DIR}/dsp/utils/ObjectCache.cpp
 )
 
 # Add SIMDE to include directories
@@ -104,8 +114,6 @@ target_include_directories(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/sqsrc/thread
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130/tools
-    ${SOURCE_DIR}/sqsrc/thread/ThreadSharedState.h
-
 )
 
 target_compile_options(SquinkyLabs PRIVATE 
@@ -115,7 +123,7 @@ target_compile_options(SquinkyLabs PRIVATE
 # Call this to link and create the plugin file
 create_plugin(
     SOURCE_LIB      SquinkyLabs
-    PLUGIN_NAME     squinkylabs-plug1
+    PLUGIN_NAME     SquinkyLabs
     PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/SquinkyVCV-main/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
