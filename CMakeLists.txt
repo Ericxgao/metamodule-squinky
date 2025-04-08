@@ -123,7 +123,7 @@ target_compile_options(SquinkyLabs PRIVATE
 # Call this to link and create the plugin file
 create_plugin(
     SOURCE_LIB      SquinkyLabs
-    PLUGIN_NAME     SquinkyLabs
+    PLUGIN_NAME     squinkylabs-plug1
     PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/SquinkyVCV-main/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins

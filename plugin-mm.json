@@ -1,12 +1,100 @@
 {
-	"MetaModulePluginMaintainer": "My Name",
-	"MetaModulePluginMaintainerEmail": "",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "",
+	"MetaModulePluginMaintainer": "oksami",
+	"MetaModulePluginMaintainerEmail": "oksami@gmail.com",
+	"MetaModulePluginMaintainerUrl": "https://github.com/Ericxgao/metamodule-squinky",
+	"MetaModuleDescription": "Squinky Labs for MetaModule",
 	"MetaModuleIncludedModules": [
 		{
 			"slug": "squinkylabs-filt",
 			"name": "Stairway"
+		},
+		{
+			"slug": "squinkylabs-mixm",
+			"name": "Form"
+		},
+		{
+			"slug": "squinkylabs-comp",
+			"name": "Comp"
+		},
+		{
+			"slug": "squinkylabs-funv",
+			"name": "Functional VCO-1"
+		},
+		{
+			"slug": "squinkylabs-dt",
+			"name": "Polygate"
+		},
+		{
+			"slug": "squinkylabs-wvco",
+			"name": "FM Kitchen Sink"
+		},
+		{
+			"slug": "squinkylabs-sub",
+			"name": "Substitute"
+		},
+		{
+			"slug": "squinkylabs-basic",
+			"name": "Basic VCO"
+		},
+		{
+			"slug": "squinkylabs-f2",
+			"name": "F2"
+		},
+		{
+			"slug": "squinkylabs-sines",
+			"name": "Organ Three"
+		},
+		{
+			"slug": "squinkylabs-mix8",
+			"name": "Mixer-8"
+		},
+		{
+			"slug": "squinkylabs-slew4",
+			"name": "Slade"
+		},
+		{
+			"slug": "squinkylabs-tremolo",
+			"name": "Chopper"
+		},
+		{
+			"slug": "squinkylabs-lfn",
+			"name": "LFN"
+		},
+		{
+			"slug": "squinkylabs-ev3",
+			"name": "EV3"
+		},
+		{
+			"slug": "squinkylabs-vocalanimator",
+			"name": "Growler"
+		},
+		{
+			"slug": "squinkylabs-CHB2",
+			"name": "Chebyshev II"
+		},
+		{
+			"slug": "squinkylabs-shp",
+			"name": "Shaper"
+		},
+		{
+			"slug": "squinkylabs-vocalfilter",
+			"name": "Formants"
+		},
+		{
+			"slug": "squinkylabs-gry",
+			"name": "Gray Code"
+		},
+		{
+			"slug": "squinkylabs-freqshifter",
+			"name": "Booty Shifter"
+		},
+		{
+			"slug": "squinkylabs-coloredNoise",
+			"name": "Colors"
+		},
+		{
+			"slug": "squinkylabs-super",
+			"name": "Saws"
 		}
 	]
 }
