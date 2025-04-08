@@ -21,11 +21,21 @@ void init(rack::Plugin *p) {
 
   p->addModel(modelFiltModule);
   p->addModel(modelEV3Module);
-  // p->addModel(modelCompressorModule);
+  p->addModel(modelF2Module);
+  p->addModel(modelCompressorModule);
+  p->addModel(modelColoredNoiseModule);
+  p->addModel(modelVocalFilterModule);
+  p->addModel(modelGrayModule);
+  p->addModel(modelSuperModule);
+  p->addModel(modelShaperModule);
+  p->addModel(modelVocalModule);  
+  p->addModel(modelCHBModule);
+  p->addModel(modelLFNModule); 
+  p->addModel(modelLFNBModule); 
   // p->addModel(modelCompressor2Module);
-  // p->addModel(modelBasicModule);
-  // p->addModel(modelBootyModule);
-  // p->addModel(modelCHBModule);
-  // Chopper
-  // p->addModel(modelTremoloModule);
+  p->addModel(modelBasicModule);
+  p->addModel(modelBootyModule);
+  p->addModel(modelTremoloModule);  
+  p->addModel(modelSlew4Module);
+  p->addModel(modelMix8Module);
 }

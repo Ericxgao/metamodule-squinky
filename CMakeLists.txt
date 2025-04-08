@@ -18,30 +18,42 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(SIMDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/extern/simde")
 
 # Define SOURCE_DIR first
-set(SOURCE_DIR ./squinky)
+set(SOURCE_DIR ./SquinkyVCV-main)
 
 add_library(SquinkyLabs STATIC)
 
 target_compile_definitions(SquinkyLabs PRIVATE 
     __V1x 
     __PLUGIN
+    SIMDE_ENABLE_NATIVE_ALIASES
 )
 
 target_sources(SquinkyLabs PRIVATE
     # ${SOURCE_DIR}/src/third-party/IMWidgets.cpp
     ${SOURCE_DIR}/src/FiltModule.cpp
-    # ${SOURCE_DIR}/src/BasicModule.cpp
-    # ${SOURCE_DIR}/src/BootyModule.cpp
+    # ${SOURCE_DIR}/src/BasicModule.3cpp
+    ${SOURCE_DIR}/src/BootyModule.cpp
     # ${SOURCE_DIR}/src/ChaosKittyModule.cpp
-    # ${SOURCE_DIR}/src/CHBgModule.cpp
-    # ${SOURCE_DIR}/src/CHBModule.cpp
-    # ${SOURCE_DIR}/src/CompressorModule.cpp
-    # ${SOURCE_DIR}/src/CompressorModule2.cpp
+    ${SOURCE_DIR}/src/CHBModule.cpp
+    ${SOURCE_DIR}/src/ColoredNoiseModule.cpp
+    ${SOURCE_DIR}/src/CompressorModule.cpp
+    ${SOURCE_DIR}/src/CompressorModule2.cpp
     # ${SOURCE_DIR}/src/DGModule.cpp
     # ${SOURCE_DIR}/src/DividerXModule.cpp
     # ${SOURCE_DIR}/src/DrumTriggerModule.cpp
     ${SOURCE_DIR}/src/EV3Module.cpp
-    # ${SOURCE_DIR}/src/TremoloModule.cpp
+    ${SOURCE_DIR}/src/F2Module.cpp
+    ${SOURCE_DIR}/src/GrayModule.cpp
+    ${SOURCE_DIR}/src/VocalFilterModule.cpp
+    ${SOURCE_DIR}/src/SuperModule.cpp
+    ${SOURCE_DIR}/src/ShaperModule.cpp
+    ${SOURCE_DIR}/src/VocalModule.cpp
+    ${SOURCE_DIR}/src/LFNModule.cpp
+    ${SOURCE_DIR}/src/LFNBModule.cpp
+    ${SOURCE_DIR}/src/TremoloModule.cpp
+    ${SOURCE_DIR}/src/Slew4Module.cpp
+    ${SOURCE_DIR}/src/BasicModule.cpp
+    ${SOURCE_DIR}/src/Mix8Module.cpp
     ${SOURCE_DIR}/dsp/utils/AudioMath.cpp
     ${SOURCE_DIR}/dsp/utils/ObjectCache.cpp
     ${SOURCE_DIR}/dsp/utils/AsymWaveShaper.cpp
@@ -58,6 +70,16 @@ target_sources(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/dsp/generators/minBlepGenerator.cpp
     ${SOURCE_DIR}/dsp/third-party/src/minblep.cpp
     ${SOURCE_DIR}/sqsrc/clock/ClockMult.cpp
+    ${SOURCE_DIR}/dsp/utils/AutioMath_4.cpp
+    ${SOURCE_DIR}/sqsrc/thread/ThreadClient.cpp
+    ${SOURCE_DIR}/dsp/fft/FFT.cpp
+    ${SOURCE_DIR}/sqsrc/thread/ThreadSharedState.cpp
+    ${SOURCE_DIR}/dsp/fft/FFTCrossFader.cpp
+    ${SOURCE_DIR}/sqsrc/thread/ThreadServer.cpp
+    ${SOURCE_DIR}/dsp/fft/FFT.cpp
+    ${SOURCE_DIR}/dsp/third-party/kiss_fft130/tools/kiss_fftr.c
+    ${SOURCE_DIR}/dsp/third-party/kiss_fft130/kiss_fft.c
+    ${SOURCE_DIR}/dsp/filters/FormantTables2.cpp
 )
 
 # Add SIMDE to include directories
@@ -79,6 +101,11 @@ target_include_directories(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/src/third-party
     ${SOURCE_DIR}/src/seq
     ${SOURCE_DIR}/midi/model
+    ${SOURCE_DIR}/sqsrc/thread
+    ${SOURCE_DIR}/dsp/third-party/kiss_fft130
+    ${SOURCE_DIR}/dsp/third-party/kiss_fft130/tools
+    ${SOURCE_DIR}/sqsrc/thread/ThreadSharedState.h
+
 )
 
 target_compile_options(SquinkyLabs PRIVATE 
@@ -89,7 +116,7 @@ target_compile_options(SquinkyLabs PRIVATE
 create_plugin(
     SOURCE_LIB      SquinkyLabs
     PLUGIN_NAME     squinkylabs-plug1
-    PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/squinky/plugin.json
+    PLUGIN_JSON     ${CMAKE_CURRENT_LIST_DIR}/SquinkyVCV-main/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
 )
