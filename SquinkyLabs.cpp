@@ -33,7 +33,7 @@ void init(rack::Plugin *p) {
   p->addModel(modelVocalModule);  
   p->addModel(modelCHBModule);
   p->addModel(modelLFNModule); 
-  p->addModel(modelLFNBModule); 
+  // p->addModel(modelLFNBModule); 
   p->addModel(modelBasicModule);
   p->addModel(modelBootyModule);
   p->addModel(modelTremoloModule);  
@@ -46,4 +46,5 @@ void init(rack::Plugin *p) {
   p->addModel(modelWVCOModule);
   p->addModel(modelSubModule);
   p->addModel(modelSinesModule);
+  // p->addModel(modelSampModule);
 }

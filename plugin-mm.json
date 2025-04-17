@@ -6,95 +6,113 @@
 	"MetaModuleIncludedModules": [
 		{
 			"slug": "squinkylabs-filt",
-			"name": "Stairway"
+			"name": "Stairway",
+			"displayName": "Stairway - Ladder Filter"
 		},
 		{
 			"slug": "squinkylabs-mixm",
-			"name": "Form"
+			"name": "Form",
+			"displayName": "Form - Mixer"
 		},
 		{
 			"slug": "squinkylabs-comp",
-			"name": "Comp"
+			"name": "Comp",
+			"displayName": "Comp - Compressor"
 		},
 		{
 			"slug": "squinkylabs-funv",
-			"name": "Functional VCO-1"
+			"name": "Functional VCO-1",
+			"displayName": "Functional VCO-1"
 		},
 		{
 			"slug": "squinkylabs-dt",
-			"name": "Polygate"
+			"name": "Polygate",
+			"displayName": "Polygate"
 		},
 		{
 			"slug": "squinkylabs-wvco",
-			"name": "FM Kitchen Sink"
+			"name": "FM Kitchen Sink",
+			"displayName": "FM Kitchen Sink"
 		},
 		{
 			"slug": "squinkylabs-sub",
-			"name": "Substitute"
+			"name": "Substitute",
+			"displayName": "Substitute"
 		},
 		{
 			"slug": "squinkylabs-basic",
-			"name": "Basic VCO"
+			"name": "Basic VCO",
+			"displayName": "Basic VCO"
 		},
 		{
 			"slug": "squinkylabs-f2",
-			"name": "F2"
+			"name": "F2 - Multimode Filter",
+			"displayName": "F2 - Multimode Filter"
 		},
 		{
 			"slug": "squinkylabs-sines",
-			"name": "Organ Three"
+			"name": "Organ Three",
+			"displayName": "Organ Three"
 		},
 		{
 			"slug": "squinkylabs-mix8",
-			"name": "Mixer-8"
+			"name": "Mixer-8",
+			"displayName": "Mixer-8"
 		},
 		{
 			"slug": "squinkylabs-slew4",
-			"name": "Slade"
+			"name": "Slade",
+			"displayName": "Slade - Slew"
 		},
 		{
 			"slug": "squinkylabs-tremolo",
-			"name": "Chopper"
+			"name": "Chopper",
+			"displayName": "Chopper - Tremolo"
 		},
 		{
 			"slug": "squinkylabs-lfn",
-			"name": "LFN"
+			"name": "LFN",
+			"displayName": "LFN - Low Frequency Noise"
 		},
 		{
 			"slug": "squinkylabs-ev3",
-			"name": "EV3"
+			"name": "EV3",
+			"displayName": "EV3 - Triple VCO"
 		},
 		{
 			"slug": "squinkylabs-vocalanimator",
-			"name": "Growler"
+			"name": "Growler",
+			"displayName": "Growler - Vocal Animator"
 		},
 		{
 			"slug": "squinkylabs-CHB2",
-			"name": "Chebyshev II"
+			"name": "Chebyshev II",
+			"displayName": "Chebyshev II - Waveshaper VCO"
 		},
 		{
 			"slug": "squinkylabs-shp",
-			"name": "Shaper"
+			"name": "Shaper",
+			"displayName": "Shaper - Wavefolder"
 		},
 		{
 			"slug": "squinkylabs-vocalfilter",
-			"name": "Formants"
+			"name": "Formants",
+			"displayName": "Formants - Vocal Filter"
 		},
 		{
 			"slug": "squinkylabs-gry",
-			"name": "Gray Code"
+			"name": "Gray Code",
+			"displayName": "Gray Code - Clock Divider"
 		},
 		{
 			"slug": "squinkylabs-freqshifter",
-			"name": "Booty Shifter"
-		},
-		{
-			"slug": "squinkylabs-coloredNoise",
-			"name": "Colors"
+			"name": "Booty Shifter",
+			"displayName": "Booty Shifter - Frequency Shifter"
 		},
 		{
 			"slug": "squinkylabs-super",
-			"name": "Saws"
+			"name": "Saws",
+			"displayName": "Saws - Super Saw"
 		}
 	]
 }

@@ -90,6 +90,20 @@ target_sources(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130/kiss_fft.c
     ${SOURCE_DIR}/dsp/filters/FormantTables2.cpp
     ${SOURCE_DIR}/dsp/utils/ObjectCache.cpp
+    ${SOURCE_DIR}/src/SampModule.cpp
+    ${SOURCE_DIR}/dsp/samp/CompiledInstrument.cpp
+    ${SOURCE_DIR}/dsp/samp/FilePath.cpp
+    ${SOURCE_DIR}/dsp/samp/WaveLoader.cpp
+    ${SOURCE_DIR}/dsp/samp/WaveLoaders.cpp
+    ${SOURCE_DIR}/dsp/samp/Sampler4vx.cpp
+    ${SOURCE_DIR}/dsp/samp/SamplerSchema.cpp
+    ${SOURCE_DIR}/dsp/samp/RegionPool.cpp
+    ${SOURCE_DIR}/dsp/samp/CompiledRegion.cpp
+    ${SOURCE_DIR}/dsp/samp/Streamer.cpp
+    ${SOURCE_DIR}/dsp/samp/HeadingTracker.cpp
+    ${SOURCE_DIR}/dsp/samp/SParse.cpp
+    ${SOURCE_DIR}/dsp/samp/SLex.cpp
+    ${SOURCE_DIR}/dsp/samp/LexContext.cpp
 )
 
 # Add SIMDE to include directories
@@ -114,6 +128,7 @@ target_include_directories(SquinkyLabs PRIVATE
     ${SOURCE_DIR}/sqsrc/thread
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130
     ${SOURCE_DIR}/dsp/third-party/kiss_fft130/tools
+    ${SOURCE_DIR}/dsp/samp
 )
 
 target_compile_options(SquinkyLabs PRIVATE 
