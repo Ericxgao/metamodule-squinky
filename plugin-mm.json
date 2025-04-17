@@ -113,6 +113,11 @@
 			"slug": "squinkylabs-super",
 			"name": "Saws",
 			"displayName": "Saws - Super Saw"
+		},
+		{
+			"slug": "squinkylabs-mixStereo",
+			"name": "Mix Stereo",
+			"displayName": "Mix Stereo"
 		}
 	]
 }
